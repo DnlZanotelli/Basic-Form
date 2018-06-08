@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Form</title> 
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div id="name" class="form form-name form-field">
+			<!-- name -->
+			<label for="first-name">First Name:</label>
+			<input type="text" name="first-name" id="first-name" required="" placeholder="First Name">
+
+			<label for="last-name">Last Name:</label>
+			<input type="text" name="last-name" id="last-name" required placeholder="Last Name">
+		</div>
+
+		<div id="gender" class="form form-gender form-field">
+			<!-- gender -->
+			<label for="male-gender">Male:</label>
+			<input type="radio" name="gender-select" required id="male-gender">
+
+			<label for="female-gender">Female:</label>
+			<input type="radio" name="gender-select" required id="female-gender">
+
+			<label for="other-gender">Other:</label>
+			<input type="radio" name="gender-select" required id="other-gender">
+		</div>
+
+		<div id="email-password-form-field" class="form form-field form-email-password">
+			<!-- email -->
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email-form" required placeholder="your@email">
+
+			<!-- password -->
+			<label for="password">Password:</label>
+			<input id="password" type="password" name="password-form" pattern="[A-Za-z]{5,10}" required placeholder="password" title="You password must be between 5 and 10 regular characterss">
+		</div>
+
+		<div>
+			<!-- drop-down menu -->
+			<label> Birthday
+				<select name="month-birthday" required>
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+					<option>Apr</option>
+					<option>May</option>
+					<option>Jun</option>
+					<option>Jul</option>
+					<option>Aug</option>
+					<option>Sep</option>
+					<option>Oct</option>
+					<option>Nov</option>
+					<option>Dec</option>
+				</select>
+				<select name="day-birthday" required>
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+				<select name="year-birthday" required>
+					<option>Year</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+				</select>
+			</label>
+		</div>
+
+		<div>
+			<label id="terms-check-box" for="check-box">
+				I agree to the terms and conditions 
+				<input type="checkbox" name="terms-check" required id="check-box" >
+			</label>
+		</div>
+			<input type="submit" name="submit-form">
+	</form>
+</body>
+</html>
